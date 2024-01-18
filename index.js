@@ -78,7 +78,7 @@ require("dotenv").config();
 
 app.use(express.json());
 
-const bookRouter = require("./routes/bookRouter");
+const bookRouter = require("./routes/bookRoutes");
 
 app.use("/api/v1/books", bookRouter);
 
