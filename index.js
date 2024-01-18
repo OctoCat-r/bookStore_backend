@@ -85,5 +85,5 @@ const bookRouter = require("./routes/bookRoutes");
 app.use("/api/v1/books", bookRouter);
 
 app.listen(process.env.PORT, () =>
-  console.log("Server is running on port 5000")
+  console.log("Server is running on port 4000")
 );
