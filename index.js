@@ -73,12 +73,14 @@
 
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 require("dotenv").config();
 
 app.use(express.json());
+app.use(cors());
 
-const bookRouter = require("./routes/bookRouter");
+const bookRouter = require("./routes/bookRoutes");
 
 app.use("/api/v1/books", bookRouter);
 
