@@ -1,6 +1,6 @@
 const { Pool } = require("pg");
 const pool = require("../db");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const createUser = async (newId, username, password, email) => {
   const hashedPassword = await bcrypt.hash(password, 12);
